@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementation</title>
+</head>
+
+<body>
+    <h2>Waht Can javaScript Do?</h2>
+
+    <p id="demo">javaScript Can Change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML= 'Hello JavaScript!'">Click Me</button>
+
+    <hr>
+    <h1>It Can Change Add The CSS</h1>
+    <p id="demo2"> Hello Namaste</p>
+
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='45px'">Click Me</button>
+    <hr>
+
+    <h1 id="hide">Jacascript can hide the HTML element</h1>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">It will hide the
+        heading</button>
+
+    <hr>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="unhide" style="display: none">Hello JavaScript</p>
+
+    <button type="button" onclick="document.getElementById('unhide').style.display='block'">Click Here</button>
+    <hr>
+
+    <h1>ALert Box</h1>
+    <script>
+        window.alert(5+6)
+    </script>
+</body>
+
+</html>
