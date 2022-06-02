@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Finding HTML Elements Using document.forms</h1>
+
+    <form action="">
+        First Name: <input type="text" name="" id="">
+        last Name: <input type="text">
+        Date: <input type="date">
+    </form> <br>
+
+    <form action="">
+   
+        last Name: <input type="text">
+        Date: <input type="date">
+    </form>
+    <br>
+    <form action="">
+        
+        Date: <input type="date">
+    </form>
+    <br>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Number of forms: " + document.forms.length
+    </script>
+</body>
+</html>

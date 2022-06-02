@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function disFunc(){
+            document.getElementById("mySelect").disabled = true
+        }
+        function EnabFunc(){
+            document.getElementById("mySelect").disabled = false
+        }
+        function getProp(){
+            document.getElementById("Properties").innerHTML = document.getElementById("mySelect").length
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        <select name="" id="mySelect">
+            <option value="">Apple</option>
+            <option value="">Mango</option>
+            <option value="">Banana</option>
+            <option value="">Ornage</option>
+        </select>
+    </form>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. et iste unde.</p>
+
+    <input type="button" value="disable" value="Disable list"  onclick="disFunc()">
+    <input type="button" value="Enable"  value="Enable list" onclick="EnabFunc()">
+
+    <p>Get The number of Properties in dropdown. <p id="Properties">0</p></p>
+
+    <button onclick="getProp()">CLick </button>
+
+    
+
+    
+</body>
+</html>
