@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="button">
+        <input type="button" value="open new window" onclick="opeWin()">
+    </form>
+    <form action="button">
+        <input type="button" value="Blur new window" onclick="blurWin()">
+    </form>
+    <form action="button">
+        <input type="button" value="Focus new window" onclick="focusWin()">
+    </form>
+    <script>
+        var myWindow;
+
+        function opeWin() {
+            window.open("https://www.w3schools.com", "copyhistory = yes", "width=200", "heigth=100");
+            myWindow.blur();
+        }
+        function blurWin() {
+            myWindow.blur()
+        }
+        function focusWin() {
+            myWindow.focus();
+        }
+    </script>
+</body>
+
+</html>
